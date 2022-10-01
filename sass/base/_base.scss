@@ -46,9 +46,27 @@ ul {
 }
 
 .container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    // breakpoints:
+    // mobil - 480
+    // tablet - 768
+    // desktop - 1600
+
+    // mobile styles
+        max-width: 480px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+
+    // tablet styles
+        @media screen and (min-width: 768px) {
+            max-width: 720px;
+        }
+    
+    // desktop styles
+        @media screen and (min-width: 1200px) {
+            max-width: 1200px;
+        }
 }
 
 
