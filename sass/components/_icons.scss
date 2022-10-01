@@ -1,0 +1,65 @@
+.header__icon-mail {
+	fill: currentColor;
+	width: 16px;
+	height: 12px;
+	vertical-align: middle;
+	margin-right: 10px;
+	align-items: center;
+}
+
+.header__icon-tel {
+	fill: currentColor;
+	width: 10px;
+	height: 16px;
+	vertical-align: middle;
+	margin-right: 10px;
+	align-items: center;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 16px;
+
+	&__svg {
+		width: 20px;
+		height: 20px;
+	}
+
+	&__list:not(:last-child) {
+		margin-right: 10px;
+	}
+}
+
+.join__icon:not(:last-child) {
+	margin-right: 10px;
+}
+
+.client__icon {
+	fill: currentColor;
+}
+
+.follow-icon {
+	margin-left: 10px;
+}
+
+.form-icon-phone {
+	position: absolute;
+	top: 50%;
+	left: 12px;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	fill: var(--main-text-color);
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients {
+	display: flex;
+	margin-top: 50px;
+
+	&__card:not(:last-child) {
+		margin-right: 30px;
+	}
+}

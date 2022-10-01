@@ -1,0 +1,44 @@
+.job {
+	padding-top: 0;
+	padding-bottom: 94px;
+
+	&__card {
+		display: flex;
+		margin-top: 50px;
+	}
+
+	&__list {
+		margin-right: 30px;
+	}
+}
+
+.decktop {
+	position: relative;
+
+	&__text {
+		position: absolute;
+		font-weight: 700;
+		line-height: 1.14;
+		color: var(--hero-text-color);
+
+		text-transform: uppercase;
+		width: 370px;
+		height: 70px;
+		background: rgba(47, 48, 58, 0.8);
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&::before {
+		display: inline-block;
+		position: absolute;
+		content: "";
+		width: 370px;
+		height: 70px;
+		background: rgba(47, 48, 58, 0.8);
+		bottom: 0;
+		opacity: 0;
+	}
+}

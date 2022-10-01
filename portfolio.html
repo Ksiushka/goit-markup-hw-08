@@ -13,7 +13,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		/>
-		<link rel="stylesheet" href="./css/styles.css" />
+		<!-- <link rel="stylesheet" href="./css/styles.css" /> -->
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 	<body>
@@ -213,7 +213,7 @@
 					</a>
 					<address class="footer__contacts">
 						<ul>
-							<li>
+							<li class="footer__list">
 								<a
 									class="footer__address"
 									href="https://goo.gl/maps/BtjrB1jNea8zQYT58"
@@ -223,42 +223,44 @@
 									м. Київ, пр-т Лесі Українки, 26
 								</a>
 							</li>
-							<li><a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-							<li><a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+							<li class="footer__list">
+								<a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+							</li>
+							<li class="footer__list"><a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
 						</ul>
 					</address>
 				</div>
 				<div class="join">
 					<p class="join__us">приєднуйтесь</p>
-					<ul class="icon-list-1">
-						<li>
-							<a class="icons__button join__icon" href="#">
+					<ul class="join__list">
+						<li class="join__icon">
+							<a class="join__button" href="#">
 								<svg class="icons__svg">
-									<use class="" href="./images/symbol-defs2.svg#icon-instagram-2"></use>
+									<use href="./images/symbol-defs2.svg#icon-instagram-2"></use>
 								</svg>
 							</a>
 						</li>
 
-						<li>
-							<a class="icons__button join__icon" href="#">
+						<li class="join__icon">
+							<a class="join__button" href="#">
 								<svg class="icons__svg">
 									<use href="./images/symbol-defs2.svg#icon-twitter-1"></use>
 								</svg>
 							</a>
 						</li>
 
-						<li>
-							<a class="icons__button join__icon" href="#">
+						<li class="join__icon">
+							<a class="join__button" href="#">
 								<svg class="icons__svg">
 									<use href="./images/symbol-defs2.svg#icon-facebook-1"></use>
 								</svg>
 							</a>
 						</li>
 
-						<li>
-							<a class="icons__button join__icon" href="#">
+						<li class="join__icon">
+							<a class="join__button" href="#">
 								<svg class="icons__svg">
-									<use class="button-icon" href="./images/symbol-defs2.svg#icon-linkedin-1"></use>
+									<use href="./images/symbol-defs2.svg#icon-linkedin-1"></use>
 								</svg>
 							</a>
 						</li>
@@ -267,8 +269,8 @@
 				<div class="footer-follow">
 					<form action="" class="form2">
 						<p class="join__us">Підпишіться на розсилку</p>
-						<div class="footer-form">
-							<div class="form-follow">
+						<div class="form2__footer">
+							<div class="form2__follow">
 								<label for="mail"></label>
 								<input required="" type="email" name="mail" id="mail" placeholder="E-mail" />
 							</div>

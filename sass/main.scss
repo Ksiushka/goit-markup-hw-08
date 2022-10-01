@@ -1,10 +1,22 @@
-@import './utils/vars';
-@import './utils/visually-hidden';
+@import "./utils/vars";
+@import "./utils/visually-hidden";
 
-@import './base/base';
+@import "./base/base";
+@import "./base/container";
 
-@import './components/components';
-@import './components/btn';
-@import './components/logo';
-@import './components/current';
-@import './components/footer';
+@import "./components/btn";
+@import "./components/logo";
+@import "./components/current";
+@import "./components/footer";
+@import "./components/features";
+@import "./components/nav";
+@import "./components/header-contacts";
+@import "./components/icons";
+@import "./components/job";
+@import "./components/team";
+@import "./components/hero";
+@import "./components/overlay";
+@import "./components/modal";
+@import "./components/forms";
+@import "./components/filter-portfolio";
+@import "./components/portfolio";
