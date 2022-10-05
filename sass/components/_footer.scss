@@ -13,8 +13,12 @@
 }
 
 .footer {
-	display: flex;
-	align-items: baseline;
+	text-align: center;
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		align-items: baseline;
+	}
 
 	&__address {
 		color: var(--hero-text-color);
@@ -34,7 +38,11 @@
 }
 
 .join {
-	margin-left: 70px;
+	margin: 0 auto;
+
+	@media screen and (min-width: 1200px) {
+		margin-left: 70px;
+	}
 
 	&__list {
 		display: flex;
@@ -48,5 +56,13 @@
 		font-weight: 700;
 		line-height: 1.14;
 		text-transform: uppercase;
+		margin: 0 auto;
+		justify-content: center;
+		margin-top: 60px;
+
+		@media screen and (min-width: 1200px) {
+			margin-left: 70px;
+			margin-top: 0;
+		}
 	}
 }

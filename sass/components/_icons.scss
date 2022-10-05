@@ -36,10 +36,6 @@
 	margin-right: 10px;
 }
 
-.client__icon {
-	fill: currentColor;
-}
-
 .follow-icon {
 	margin-left: 10px;
 }
@@ -55,11 +51,39 @@
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.client__icon {
+	fill: currentColor;
+}
+
 .clients {
 	display: flex;
-	margin-top: 50px;
+	// margin-top: 50px;
+	// 	display: flex;
+	flex-wrap: wrap;
+	margin: -15px;
 
-	&__card:not(:last-child) {
-		margin-right: 30px;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin: -15px;
+	}
+
+	&__card {
+		width: calc((100% - 4 * 15px) / 2);
+		margin: 15px;
+
+		@media screen and (min-width: 768px) {
+			width: calc((100% - 6 * 15px) / 3);
+			margin: 15px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			width: calc((100% - 12 * 15px) / 6);
+			margin: 15px;
+		}
 	}
 }
