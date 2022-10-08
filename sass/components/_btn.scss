@@ -194,3 +194,36 @@
 		transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
 }
+
+.btn-menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 40px;
+	width: 40px;
+	padding: 0;
+	margin-left: 276px;
+
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+
+.menu-toggle {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+
+	height: 40px;
+	width: 40px;
+	padding: 0;
+
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}

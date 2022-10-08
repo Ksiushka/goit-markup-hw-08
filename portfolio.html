@@ -26,7 +26,7 @@
 					</a>
 					<ul class="nav__pages">
 						<li class="nav__name"><a class="nav__link" href="./index.html">Студія</a></li>
-						<li class="nav__name"><a class="nav__link current" href="./portfolio.html">Портфоліо</a></li>
+						<li class="nav__name"><a class="current nav__link" href="./portfolio.html">Портфоліо</a></li>
 						<li class="nav__name"><a class="nav__link" href="">Контакти</a></li>
 					</ul>
 				</nav>
@@ -48,6 +48,13 @@
 						</a>
 					</li>
 				</ul>
+				<div>
+					<button type="button" class="btn-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+						<svg width="40" height="40">
+							<use href="./images/symbol-defs8.svg#icon-menu_40px"></use>
+						</svg>
+					</button>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -65,7 +72,19 @@
 						<li>
 							<a class="product portfolio-list-1" href="">
 								<div class="product-thumb">
-									<img src="./images/img1.jpg" alt="три фотографии" width="370" />
+									<img
+										srcset="
+											./images/img_Sp-@1x-450.jpg 450w,
+											./images/img_Sp-@2x-900.jpg 900w,
+											./images/img_Mp-@1x-354.jpg 354w,
+											./images/img_Mp-@2x-708.jpg 708w,
+											./images/img_Lp-@1x-370.jpg 370w,
+											./images/img_Lp-@2x-740.jpg 740w
+										"
+										src="./images/img_Sp-@1x-450.jpg"
+										sizes="(min-width 1200px) 370px, (min-width 768px) 354px, (min-width 480px) 450px, 100vw"
+										alt="три фотографии"
+									/>
 
 									<p class="product-action">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -82,7 +101,19 @@
 						<li>
 							<a class="product portfolio-list-1" href="">
 								<div class="product-thumb">
-									<img src="./images/img2.jpg" alt="два баскитболиста с мячем" width="370" />
+									<img
+										srcset="
+											./images/img_Sp2-@1x-450.jpg 450w,
+											./images/img_Sp2-@2x-900.jpg 900w,
+											./images/img_Mp2-@1x-354.jpg 354w,
+											./images/img_Mp2-@2x-708.jpg 708w,
+											./images/img_Lp2-@1x-370.jpg 370w,
+											./images/img_Lp2-@2x-740.jpg 740w
+										"
+										src="./images/img_Sp2-@1x-450.jpg"
+										sizes="(min-width 1200px) 370px, (min-width 768px) 354px, (min-width 480px) 450px, 100vw"
+										alt="два баскитболиста с мячем"
+									/>
 
 									<p class="product-action">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -98,7 +129,19 @@
 						<li>
 							<a class="product portfolio-list-1" href="">
 								<div class="product-thumb">
-									<img src="./images/img3.jpg" alt="надпись нп фоне картинки рыбы" width="370" />
+									<img
+										srcset="
+											./images/img_Sp3-@1x-450.jpg 450w,
+											./images/img_Sp3-@2x-900.jpg 900w,
+											./images/img_Mp3-@1x-354.jpg 354w,
+											./images/img_Mp3-@2x-708.jpg 708w,
+											./images/img_Lp3-@1x-370.jpg 370w,
+											./images/img_Lp3-@2x-740.jpg 740w
+										"
+										src="./images/img_Sp3-@1x-450.jpg"
+										sizes="(min-width 1200px) 370px, (min-width 768px) 354px, (min-width 480px) 450px, 100vw"
+										alt="надпись нп фоне картинки рыбы"
+									/>
 									<p class="product-action">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -113,7 +156,19 @@
 						<li>
 							<a class="product portfolio-list-1" href="#">
 								<div class="product-thumb">
-									<img src="./images/img4.jpg" alt="наушники" width="370" />
+									<img
+										srcset="
+											./images/img_Sp4-@1x-450.jpg 450w,
+											./images/img_Sp4-@2x-900.jpg 900w,
+											./images/img_Mp4-@1x-354.jpg 354w,
+											./images/img_Mp4-@2x-708.jpg 708w,
+											./images/img_Lp4-@1x-370.jpg 370w,
+											./images/img_Lp4-@2x-740.jpg 740w
+										"
+										src="./images/img_Sp4-@1x-450.jpg "
+										sizes="(min-width 1200px) 370px, (min-width 768px) 354px, (min-width 480px) 450px, 100vw"
+										alt="наушники"
+									/>
 									<p class="product-action">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -128,7 +183,19 @@
 						<li>
 							<a class="product portfolio-list-1" href="">
 								<div class="product-thumb">
-									<img src="./images/img5.jpg" alt="белая и коричневая коробочки" width="370" />
+									<img
+										srcset="
+											./images/img_Sp5-@1x-450.jpg 450w,
+											./images/img_Sp5-@2x-900.jpg 900w,
+											./images/img_Mp5-@1x-354.jpg 354w,
+											./images/img_Mp5-@2x-708.jpg 708w,
+											./images/img_Lp5-@1x-370.jpg 370w,
+											./images/img_Lp5-@2x-740.jpg 740w
+										"
+										src="./images/img_Sp5-@1x-450.jpg "
+										sizes="(min-width 1200px) 370px, (min-width 768px) 354px, (min-width 480px) 450px, 100vw"
+										alt="белая и коричневая коробочки"
+									/>
 									<p class="product-action">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -143,7 +210,19 @@
 						<li>
 							<a class="product portfolio-list-1" href="">
 								<div class="product-thumb">
-									<img src="./images/img6.jpg" alt="монитор" width="370" />
+									<img
+										srcset="
+											./images/img_Sp6-@1x-450.jpg 450w,
+											./images/img_Sp6-@2x-900.jpg 900w,
+											./images/img_Mp6-@1x-354.jpg 354w,
+											./images/img_Mp6-@2x-708.jpg 708w,
+											./images/img_Lp6-@1x-370.jpg 370w,
+											./images/img_Lp6-@2x-740.jpg 740w
+										"
+										src="./images/img_Sp6-@1x-450.jpg "
+										sizes="(min-width 1200px) 370px, (min-width 768px) 354px, (min-width 480px) 450px, 100vw"
+										alt="монитор"
+									/>
 									<p class="product-action">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -158,7 +237,19 @@
 						<li>
 							<a class="product portfolio-list-1" href="">
 								<div class="product-thumb">
-									<img src="./images/img7.jpg" alt="раскрытый журнал" width="370" />
+									<img
+										srcset="
+											./images/img_Sp7-@1x-450.jpg 450w,
+											./images/img_Sp7-@2x-900.jpg 900w,
+											./images/img_Mp7-@1x-354.jpg 354w,
+											./images/img_Mp7-@2x-708.jpg 708w,
+											./images/img_Lp7-@1x-370.jpg 370w,
+											./images/img_Lp7-@2x-740.jpg 740w
+										"
+										src="./images/img_Sp7-@1x-450.jpg"
+										sizes="(min-width 1200px) 370px, (min-width 768px) 354px, (min-width 480px) 450px, 100vw"
+										alt="раскрытый журнал"
+									/>
 									<p class="product-action">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -173,7 +264,19 @@
 						<li>
 							<a class="product portfolio-list-1" href="">
 								<div class="product-thumb">
-									<img src="./images/img8.jpg" alt="стикер с надписью" width="370" />
+									<img
+										srcset="
+											./images/img_Sp8-@1x-450.jpg 450w,
+											./images/img_Sp8-@2x-900.jpg 900w,
+											./images/img_Mp8-@1x-354.jpg 354w,
+											./images/img_Mp8-@2x-708.jpg 708w,
+											./images/img_Lp8-@1x-370.jpg 370w,
+											./images/img_Lp8-@2x-740.jpg 740w
+										"
+										src="./images/img_Sp8-@1x-450.jpg"
+										sizes="(min-width 1200px) 370px, (min-width 768px) 354px, (min-width 480px) 450px, 100vw"
+										alt="стикер с надписью"
+									/>
 									<p class="product-action">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -188,7 +291,19 @@
 						<li>
 							<a class="product portfolio-list-1" href="">
 								<div class="product-thumb">
-									<img src="./images/img9.jpg" alt="ноутбук и руки мужчины на клавиатуре" width="370" />
+									<img
+										srcset="
+											./images/img_Sp9-@1x-450.jpg 450w,
+											./images/img_Sp9-@2x-900.jpg 900w,
+											./images/img_Mp9-@1x-354.jpg 354w,
+											./images/img_Mp9-@2x-708.jpg 708w,
+											./images/img_Lp9-@1x-370.jpg 370w,
+											./images/img_Lp9-@2x-740.jpg 740w
+										"
+										src="./images/img_Sp9-@1x-450.jpg"
+										sizes="(min-width 1200px) 370px, (min-width 768px) 354px, (min-width 480px) 450px, 100vw"
+										alt="ноутбук и руки мужчины на клавиатуре"
+									/>
 									<p class="product-action">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -206,65 +321,67 @@
 		</main>
 		<footer>
 			<div class="container footer">
-				<div>
-					<a href="./index.html" class="logo">
-						Web
-						<span class="logo__white">Studio</span>
-					</a>
-					<address class="footer__contacts">
-						<ul>
-							<li class="footer__list">
-								<a
-									class="footer__address"
-									href="https://goo.gl/maps/BtjrB1jNea8zQYT58"
-									target="_blank"
-									rel="noopener nofollow"
-								>
-									м. Київ, пр-т Лесі Українки, 26
+				<div class="footer__tablet">
+					<div>
+						<a href="./index.html" class="logo">
+							Web
+							<span class="logo__white">Studio</span>
+						</a>
+						<address class="footer__contacts">
+							<ul>
+								<li class="footer__list">
+									<a
+										class="footer__address"
+										href="https://goo.gl/maps/BtjrB1jNea8zQYT58"
+										target="_blank"
+										rel="noopener nofollow"
+									>
+										м. Київ, пр-т Лесі Українки, 26
+									</a>
+								</li>
+								<li class="footer__list">
+									<a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+								</li>
+								<li class="footer__list"><a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+							</ul>
+						</address>
+					</div>
+					<div class="join">
+						<p class="join__us">приєднуйтесь</p>
+						<ul class="join__list">
+							<li class="join__icon">
+								<a class="join__button" href="#">
+									<svg class="icons__svg">
+										<use href="./images/symbol-defs2.svg#icon-instagram-2"></use>
+									</svg>
 								</a>
 							</li>
-							<li class="footer__list">
-								<a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+
+							<li class="join__icon">
+								<a class="join__button" href="#">
+									<svg class="icons__svg">
+										<use href="./images/symbol-defs2.svg#icon-twitter-1"></use>
+									</svg>
+								</a>
 							</li>
-							<li class="footer__list"><a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+
+							<li class="join__icon">
+								<a class="join__button" href="#">
+									<svg class="icons__svg">
+										<use href="./images/symbol-defs2.svg#icon-facebook-1"></use>
+									</svg>
+								</a>
+							</li>
+
+							<li class="join__icon">
+								<a class="join__button" href="#">
+									<svg class="icons__svg">
+										<use href="./images/symbol-defs2.svg#icon-linkedin-1"></use>
+									</svg>
+								</a>
+							</li>
 						</ul>
-					</address>
-				</div>
-				<div class="join">
-					<p class="join__us">приєднуйтесь</p>
-					<ul class="join__list">
-						<li class="join__icon">
-							<a class="join__button" href="#">
-								<svg class="icons__svg">
-									<use href="./images/symbol-defs2.svg#icon-instagram-2"></use>
-								</svg>
-							</a>
-						</li>
-
-						<li class="join__icon">
-							<a class="join__button" href="#">
-								<svg class="icons__svg">
-									<use href="./images/symbol-defs2.svg#icon-twitter-1"></use>
-								</svg>
-							</a>
-						</li>
-
-						<li class="join__icon">
-							<a class="join__button" href="#">
-								<svg class="icons__svg">
-									<use href="./images/symbol-defs2.svg#icon-facebook-1"></use>
-								</svg>
-							</a>
-						</li>
-
-						<li class="join__icon">
-							<a class="join__button" href="#">
-								<svg class="icons__svg">
-									<use href="./images/symbol-defs2.svg#icon-linkedin-1"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
+					</div>
 				</div>
 				<div class="footer-follow">
 					<form action="" class="form2">
@@ -283,5 +400,49 @@
 				</div>
 			</div>
 		</footer>
+		<!-- Mobile menu -->
+		<div class="menu-container js-menu-container" id="mobile-menu">
+			<button class="menu-toggle js-close-menu">
+				<svg width="40" height="40">
+					<use href="./images/symbol-defs8.svg#icon-close_40px"></use>
+				</svg>
+			</button>
+			<ul class="mobile-menu">
+				<li class="mobil__list">
+					<a class="menu__link mobil__nav" href="./index.html">Студія</a>
+				</li>
+				<li class="mobil__list">
+					<a class="current-mobil menu__link mobil__nav" href="./portfolio.html">Портфоліо</a>
+				</li>
+				<li class="mobil__list">
+					<a class="menu__link mobil__nav" href="">Контакти</a>
+				</li>
+			</ul>
+
+			<ul class="list">
+				<li>
+					<a href="" class="menu__link menu__tel">+38 096 111 11 11</a>
+				</li>
+				<li class="mobil__mail">
+					<a href="" class="menu__link mail-menu">info@devstudio.com</a>
+				</li>
+			</ul>
+
+			<ul class="mobile-socials list">
+				<li><a href="" class="menu__link menu-socials socials-line">Instagram</a></li>
+				<li><a href="" class="menu__link menu-socials socials-line">Twitter</a></li>
+				<li><a href="" class="menu__link menu-socials socials-line">Facebook</a></li>
+				<li><a href="" class="menu__link menu-socials">LinkedIn</a></li>
+			</ul>
+		</div>
+		<script src="./js/modal.js"></script>
+		<!-- mobile menu -->
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
+		<script defer src="./js/mobile-menu.js"></script>
 	</body>
 </html>
