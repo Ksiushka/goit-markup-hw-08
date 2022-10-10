@@ -1,5 +1,5 @@
-form {
-	width: 450px;
+.form1 {
+	width: 320px;
 	height: 609px;
 	margin-right: auto;
 	margin-left: auto;
@@ -9,6 +9,16 @@ form {
 	background: #ffffff;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
+
+	@media screen and (min-width: 480px) {
+		width: 450px;
+		height: 609px;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 450px;
+		height: 609px;
+	}
 
 	@media screen and (min-width: 1200px) {
 		width: 528px;
@@ -62,8 +72,21 @@ form {
 }
 
 .checkbox-lable {
-	display: flex;
+	display: inline;
 	align-items: center;
+	text-align: center;
+
+	@media screen and (min-width: 480px) {
+		display: flex;
+	}
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+	}
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+	}
 }
 
 .conditions {
@@ -134,13 +157,21 @@ form {
 	margin-bottom: 20px;
 
 	& textarea {
-		width: 370px;
+		width: 240px;
 		height: 120px;
 		border: 1px solid rgba(33, 33, 33, 0.2);
 		border-radius: 4px;
 		padding-top: 12px;
 		padding-left: 16px;
 		outline: none;
+
+		@media screen and (min-width: 488px) {
+			width: 370px;
+		}
+
+		@media screen and (min-width: 768px) {
+			width: 370px;
+		}
 
 		@media screen and (min-width: 1200px) {
 			width: 448px;
@@ -181,10 +212,7 @@ textarea {
 }
 
 .form2 {
-	width: 450px;
-	height: 86px;
-	background: #2f303a;
-	padding: 0;
+	width: 100%;
 	margin-top: 60px;
 
 	@media screen and (min-width: 1200px) {
@@ -202,7 +230,7 @@ textarea {
 	}
 
 	&__follow input {
-		width: 358px;
+		width: 100%;
 		height: 50px;
 		padding-left: 16px;
 
@@ -211,6 +239,14 @@ textarea {
 		border-radius: 4px;
 		background: #2f303a;
 		color: var(--hero-text-color);
+
+		@media screen and (min-width: 769px) {
+			width: 450px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			width: 358px;
+		}
 	}
 
 	&__follow input::placeholder {
