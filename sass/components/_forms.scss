@@ -240,6 +240,10 @@ textarea {
 		background: #2f303a;
 		color: var(--hero-text-color);
 
+		@media screen and (min-width: 488px) {
+			width: 450px;
+		}
+
 		@media screen and (min-width: 769px) {
 			width: 450px;
 		}

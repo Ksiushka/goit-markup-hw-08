@@ -410,6 +410,8 @@ ul {
   color: var(--accent-color);
   text-decoration: none;
   font-family: Raleway, sans-serif;
+  display: block;
+  padding: 16px 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
@@ -472,9 +474,6 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
-}
-.footer__contacts {
-  margin-top: 20px;
 }
 .footer__list:not(:last-child) {
   margin-bottom: 10px;
@@ -659,10 +658,7 @@ ul {
           align-items: center;
 }
 .header__contacts {
-  margin-left: 96px;
-}
-.header__contacts :not(:last-child) {
-  margin-right: 50px;
+  margin-left: auto;
 }
 .header__contacts a:hover, .header__contacts a:focus {
   color: var(--accent-color);
@@ -670,6 +666,7 @@ ul {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .header__contacts {
     display: none;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -678,6 +675,9 @@ ul {
     display: -ms-flexbox;
     display: flex;
     margin-left: auto;
+  }
+  .header__contacts .header__contacts:not(:last-child) {
+    margin-right: 50px;
   }
 }
 .header__link {
@@ -779,6 +779,9 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: -15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .clients {
@@ -796,7 +799,7 @@ ul {
   }
 }
 .clients__card {
-  width: calc((100% - 60px) / 2);
+  width: 210px;
   margin: 15px;
 }
 @media screen and (min-width: 768px) {
@@ -955,9 +958,8 @@ ul {
   width: auto;
   margin: 0 auto;
   margin-bottom: 30px;
-  margin-top: 118px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 767px) {
   .hero__title {
     width: 360px;
   }
@@ -979,8 +981,8 @@ ul {
 }
 
 .overlay {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 320px;
+  height: 400px;
   outline: 1px solid #c4c4c4;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header\ img_s-@1x.png);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header\ img_s-@1x.png);
@@ -992,24 +994,31 @@ ul {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
-    background-image: url(../images/Header\ img_s-@2x.png);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header\ img_s-@2x.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header\ img_s-@2x.png);
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 480px) {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header\ img_M-@1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header\ img_M-@1x.jpg);
-  }
-}
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: url(../images/Header\ img_M-@2x.jpg);
+    max-width: 480px;
+    height: 400px;
+    padding: 118px 0;
   }
 }
 @media screen and (min-width: 769px) {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img10.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img10.jpg);
+    max-width: 768px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    max-width: 1600px;
+    height: 600px;
   }
 }
 
@@ -1433,6 +1442,11 @@ textarea {
   background: #2f303a;
   color: var(--hero-text-color);
 }
+@media screen and (min-width: 488px) {
+  .form2__follow input {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 769px) {
   .form2__follow input {
     width: 450px;
@@ -1678,20 +1692,21 @@ textarea {
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-right: 20px;
   position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 10px;
   color: #2196f3;
 }
 
 .socials-line {
-  border-right: rgba(33, 33, 33, 0.2);
-  width: 22px;
-  height: 0;
-  border-radius: 2px;
-  background-color: rgba(33, 33, 33, 0.2);
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  padding-right: 15px;
+  margin-right: 15px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.btn {
+  margin-left: auto;
 }
 
 .current-mobil {
