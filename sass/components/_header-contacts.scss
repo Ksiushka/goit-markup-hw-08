@@ -5,10 +5,6 @@
 	&__contacts {
 		margin-left: auto;
 
-		// & :not(:last-child) {
-		// 	margin-right: 50px;
-		// }
-
 		& a:hover,
 		& a:focus {
 			color: var(--accent-color);
@@ -22,9 +18,6 @@
 		@media screen and (min-width: 1200px) {
 			display: flex;
 			margin-left: auto;
-			.header__contacts:not(:last-child) {
-				margin-right: 50px;
-			}
 		}
 	}
 
@@ -48,5 +41,11 @@
 		& :focus svg {
 			fill: var(--accent-color);
 		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.header__contacts li:not(:last-child) {
+		margin-right: 50px;
 	}
 }

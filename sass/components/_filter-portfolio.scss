@@ -3,11 +3,20 @@
 	justify-content: center;
 	margin-bottom: 50px;
 
+	@media screen and (max-width: 767px) {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		gap: 8px;
+		row-gap: 15px;
+	}
+
 	@media screen and (min-width: 1200px) {
 		display: flex;
 	}
+}
 
-	& li:not(:last-child) {
+@media screen and (min-width: 769px) {
+	.filter li:not(:last-child) {
 		margin-right: 8px;
 	}
 }

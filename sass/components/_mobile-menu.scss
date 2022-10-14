@@ -24,6 +24,8 @@
 .mobile-socials {
 	display: flex;
 	margin-top: 64px;
+	flex-wrap: wrap;
+	row-gap: 10px;
 }
 
 .mobile-menu {
